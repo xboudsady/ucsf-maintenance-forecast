@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     <!-- Materialize Icons -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>UCSF Facilites Services</title>
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <div class="navbar-fixed">
+        <nav class="blue darken-3">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">UCSF</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-engineers">Engineers<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-skilled-trades">Skilled Trades<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-lock-shop">Lock Shop<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown-landscaping">Landscaping<i class="material-icons right">arrow_drop_down</i></a></li> 
+                </ul>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown-engineers" class="dropdown-content">
+                    <li><a href="#!">Central Utilities Plant</a></li>
+                    <li><a href="#!">Laurel Heights</a></li>
+                    <li><a href="#!">Mission Center Building</a></li>
+                    <li><a href="#!">Mission Bay</a></li>
+                    <li><a href="#!">Mount Zion</a></li>
+                    <li><a href="#!">Parnassus</a></li>
+                </ul>
+                <ul id="dropdown-skilled-trades" class="dropdown-content">
+                    <li><a href="#!">BMW</a></li>
+                    <li><a href="#!">Carpenter</a></li>
+                    <li><a href="#!">Electrician</a></li>
+                    <li><a href="#!">HVAC</a></li>
+                    <li><a href="#!">Plumbers</a></li>
+                    <li><a href="#!">Painter</a></li>
+                </ul>
+                <ul id="dropdown-lock-shop" class="dropdown-content">
+                    <li><a href="#!">Parnassus</a></li>
+                    <li><a href="#!">Mission Bay</a></li>
+                </ul>
+                <ul id="dropdown-landscaping" class="dropdown-content">
+                    <li><a href="#!">Parnassus</a></li>
+                    <li><a href="#!">Mission Bay</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Side Navigation -->
+    <ul class="sidenav " id="mobile-nav">
+        <li class="blue">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header white-text waves-effect waves-blue">Engineers<i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a class="waves-effect waves-blue" href="#">Central Utilities Plant</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Laurel Heights</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Mission Center Building</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Mission Bay</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Mt Zion</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Parnassus</a></li>
+                            <li><div class="divider"></div></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="collapsible-header white-text waves-effect waves-blue">Skilled Trades<i class="material-icons right white-text" style="margin-right:0;">arrow_drop_down</i></a>
+                    <div class="collapsible-body z-depth-3">
+                        <ul>
+                            <li><a class="waves-effect waves-blue" href="#">BMW</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Carpenter</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Electrician</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">HVAC</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Plumber</a></li>
+                            <li><a class="waves-effect waves-blue" href="#">Painter</a></li>
+                            <li><div class="divider"></div></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Parallax -->
+    <div>
+        
+    </div>
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+
+    <!-- jQuery -->
+    <script src="/script/jquery-3.3.1.min.js"></script>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            // Main navigation drop down menu
+            $(".dropdown-trigger").dropdown({ hover: true });
+
+            // Side Navigation Open
+            $('.sidenav').sidenav();
+
+            $('.collapsible').collapsible({ accordian: false });
+
+
+
+        });
+
+
+
+        
+    </script>
+</body>
+</html>
